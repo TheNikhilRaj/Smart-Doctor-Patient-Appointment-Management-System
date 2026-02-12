@@ -114,10 +114,10 @@ const Navbar = () => {
               />
               <div className='absolute top-10 right-0 text-l font-medium text-gray-600 z-20 hidden group-hover:block'>
                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
-                  <p onClick={() => router.push('/my-profile')} className='hover:text-black cursor-pointer'>
+                  <p onClick={() => router.push('/profile')} className='hover:text-black cursor-pointer'>
                     My Profile
                   </p>
-                  <p onClick={() => router.push('/my-appointments')} className='hover:text-black cursor-pointer'>
+                  <p onClick={() => router.push('/appointments')} className='hover:text-black cursor-pointer'>
                     My Appointments
                   </p>
                   <p onClick={logout} className='hover:text-black cursor-pointer'>
@@ -170,10 +170,10 @@ const Navbar = () => {
             </Link>
             {token && userData && (
               <>
-                <Link onClick={() => setShowMenu(false)} href='/my-profile'>
+                <Link onClick={() => setShowMenu(false)} href='/profile'>
                   <p className='px-4 py-2 rounded inline-block'>My Profile</p>
                 </Link>
-                <Link onClick={() => setShowMenu(false)} href='/my-appointments'>
+                <Link onClick={() => setShowMenu(false)} href='/appointments'>
                   <p className='px-4 py-2 rounded inline-block'>My Appointments</p>
                 </Link>
                 <p onClick={logout} className='px-4 py-2 rounded inline-block cursor-pointer'>
