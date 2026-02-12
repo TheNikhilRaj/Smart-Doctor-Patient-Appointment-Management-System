@@ -14,6 +14,20 @@ const AppContextProvider = (props) => {
   const [token, setToken] = useState(false);
   const [userData, setUserData] = useState(false);
 
+  const calculateAge = (dob) => {
+    const today = new Date();
+    const birthDate = new Date(dob);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    return age;
+  };
+
+  const months = [' ', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const slotDateFormat = (slotDate) => {
+    const dateArray = slotDate.split('_');
+    return dateArray[0] + " " + months[Number(dateArray[1])] + " " + dateArray[2];
+  };
+
   const getDoctorsData = async () => {
     try {
       const { data } = await axios.get(backendUrl + "/api/doctor/list");
@@ -55,6 +69,8 @@ const AppContextProvider = (props) => {
     userData, 
     setUserData,
     loadUserProfileData,
+    calculateAge,
+    slotDateFormat,
   };
 
   useEffect(() => {
