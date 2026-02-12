@@ -1,5 +1,30 @@
 # 🏥 Smart Doctor Patient Appointment Management System
 
+## 🚀 NEW: Next.js Unified Application Available!
+
+This repository now includes a modern **Next.js 14 unified application** that combines the frontend, backend, and admin panel into a single, powerful full-stack application.
+
+### 📁 Available Versions:
+
+1. **Next.js Unified App** (📂 `smart-doctor-nextjs/`) - **RECOMMENDED**
+   - ✅ All-in-one Next.js 14 application with App Router
+   - ✅ Built-in API routes (no separate backend needed)
+   - ✅ Server-side rendering for better SEO
+   - ✅ Single deployment target
+   - ✅ No CORS issues
+   - 🔗 [View Next.js Documentation](./smart-doctor-nextjs/README.md)
+
+2. **Original Multi-App Architecture** (📂 `frontend/`, `backend/`, `admin/`)
+   - Separate React frontends with Vite
+   - Express.js backend API
+   - Independent deployment
+
+> **💡 Tip:** For new deployments, use the Next.js version in the `smart-doctor-nextjs/` directory for better performance and easier deployment.
+
+---
+
+## About the Original Architecture
+
 A comprehensive full-stack healthcare appointment management platform built with the MERN stack. This system enables patients to browse doctors, book appointments, make payments, while providing administrative tools for managing doctors, appointments, and schedules.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-99%25-yellow)

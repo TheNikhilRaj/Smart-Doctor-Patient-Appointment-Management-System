@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏥 Smart Doctor - Next.js Full-Stack Application
 
-## Getting Started
+A modern, full-stack doctor appointment management system built with Next.js 14, featuring patient and admin portals, real-time appointment booking, and integrated payment processing.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Patient Portal
+- 👤 User authentication (register/login)
+- 🔍 Browse doctors by specialty
+- 📅 Book appointments with date/time selection
+- 💳 Integrated payment with Razorpay
+- 📋 View appointment history
+- ✏️ Update profile and upload images
+- 📱 Fully responsive design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Admin Portal
+- 🔐 Secure admin login
+- 📊 Dashboard with statistics
+- ➕ Add new doctors with image upload
+- 👨‍⚕️ Manage doctor listings
+- 📅 View and manage all appointments
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS 3.4
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JWT
+- **File Upload:** Cloudinary
+- **Payment:** Razorpay
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Configure `.env.local` with your credentials
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔐 Default Admin Credentials
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Email:** admin@smartdoctorapp.com
+- **Password:** Admin@123
+
+## 🎯 Benefits
+
+✅ Single deployment instead of three apps  
+✅ No CORS issues  
+✅ Better SEO with SSR  
+✅ Faster performance  
+✅ Easier deployment to Vercel  
+
+Made with ❤️ using Next.js 14
